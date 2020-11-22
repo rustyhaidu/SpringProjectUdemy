@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+
+server:
+  port: 9090
+
+default:
+  course:
+    name: Sap Hana
+    chapterCount: 2
+
+course:
+  name: Docker
+  chapterCount: 4
+  rating: 7
+  author: Lannister
+
+---
+spring:
+  profiles: qa
+
+server:
+  port: 9091
+
+default:
+  course:
+    name: Sap Hana2
+    chapterCount: 8
+
+course:
+  name: Docker2
+  chapterCount: 42
+  rating: 72
+  author: Lannister2
